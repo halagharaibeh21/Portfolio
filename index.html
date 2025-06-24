@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Hala's Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/meyawo.css" />
+  <style>
+    .portfolio-filters {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .portfolio-filters .btn {
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+    .portfolio-filters .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .portfolio-filters .btn.active {
+      background-color: #007bff;
+      color: white;
+    }
+    .contact-info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .contact-info img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .contact-info .details {
+      text-align: left;
+    }
+    .contact-info .details h2 {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+    .contact-info .details p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+    .portfolio-card-img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .portfolio-card-img:hover {
+      transform: scale(1.05);
+    }
+    .portfolio-container {
+      row-gap: 30px;
+    }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+  <!-- Removed navbar/menu -->
+
+  <header id="home" class="header">
+    <div class="overlay"></div>
+    <div class="header-content container">
+      <h1 class="header-title">
+        <span class="up">HI!</span>
+        <span class="down">I am Hala Gharaibeh</span>
+      </h1>
+      <p class="header-subtitle">Data Analyst</p>
+      <button id="visit-works-button" class="btn btn-primary">Learn more</button>
+    </div>
+  </header>
+
+  <section class="section pt-0" id="about">
+    <div class="container text-center">
+      <div class="about">
+        <div class="about-img-holder">
+          <img src="https://cdn-icons-png.freepik.com/256/15636/15636328.png?semt=ais_hybrid" class="about-img" alt="HALA IMAGE" style="width: 350px; height: auto;" />
+        </div>
+        <div class="about-caption">
+          <p class="section-subtitle">Who Am I ?</p>
+          <h2 class="section-title mb-3">About Me</h2>
+          <p>I am a detail-oriented Data Analyst with a strong foundation in data visualization, statistical analysis, and machine learning. Proficient in SQL, Python, and data visualization tools like Tableau and Power BI, I specialize in transforming raw data into actionable insights that drive business decisions.<br><br>Beyond technical skills, I have a keen eye for identifying trends and patterns that help organizations improve efficiency and performance. I enjoy collaborating with cross-functional teams, communicating findings in a clear and compelling manner, and leveraging data to uncover opportunities for growth. Passionate about continuous learning, I stay updated on the latest analytics tools and methodologies to enhance my expertise.</p>
+          <a href="assets/hala-gharaibeh-cv.pdf" download>
+            <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="portfolio">
+    <div class="container text-center">
+      <p class="section-subtitle">My work</p>
+      <h6 class="section-title mb-6">Projects</h6>
+      <div class="portfolio-filters">
+        <button class="btn btn-primary filter-btn active" data-filter="all">All</button>
+        <button class="btn btn-primary filter-btn" data-filter="Machine-Learning">Machine Learning</button>
+        <button class="btn btn-primary filter-btn" data-filter="data-analysis">Data Analysis</button>
+        <button class="btn btn-primary filter-btn" data-filter="visualization">Visualization</button>
+      </div>
+      <div class="row portfolio-container g-4">
+
+        <div class="col-md-4 portfolio-item" data-category="Machine-Learning">
+          <a href="https://github.com/halagharaibeh21/data-mining-cis2024/blob/main/right_code.ipynb" target="_blank" class="portfolio-card">
+            <img src="https://img.freepik.com/free-photo/turned-gray-laptop-computer_400718-47.jpg" class="portfolio-card-img" alt="Predicting Customer Interest" />
+            <span class="portfolio-card-overlay">
+              <span class="portfolio-card-caption">
+                <h4>Predicting Customer Interest in Vehicle Insurance</h4>
+                <p class="font-weight-normal">Machine-Learning</p>
+              </span>
+            </span>
+          </a>
+        </div>
+
+        <div class="col-md-4 portfolio-item" data-category="Machine-Learning">
+          <a href="https://github.com/halagharaibeh21/ML-Number-Prediction-Model/tree/main" target="_blank" class="portfolio-card">
+            <img src="https://cdn.pixabay.com/photo/2020/05/20/05/44/digitization-5194814_1280.jpg" class="portfolio-card-img" alt="Number prediction" />
+            <span class="portfolio-card-overlay">
+              <span class="portfolio-card-caption">
+                <h4>Number prediction</h4>
+                <p class="font-weight-normal">Machine-Learning</p>
+              </span>
+            </span>
+          </a>
+        </div>
+
+        <div class="col-md-4 portfolio-item" data-category="data-analysis">
+          <a href="https://github.com/halagharaibeh21/TikTok-data-tidying/blob/main/tiktok_project.ipynb" target="_blank" class="portfolio-card">
+            <img src="https://img.freepik.com/free-photo/3d-render-modern-background-with-flowing-cyber-dots-design_1048-14068.jpg" class="portfolio-card-img" alt="Data Analysis" />
+            <span class="portfolio-card-overlay">
+              <span class="portfolio-card-caption">
+                <h4>Data Tidying</h4>
+                <p class="font-weight-normal">Data Analysis</p>
+              </span>
+            </span>
+          </a>
+        </div>
+
+        <div class="col-md-4 portfolio-item" data-category="data-analysis">
+          <a href="https://github.com/halagharaibeh21/Project_Proposal_and_Communication_Workflow" target="_blank" class="portfolio-card">
+            <img src="https://img.freepik.com/free-photo/3d-render-abstract-background-with-flowing-particles_1048-13904.jpg" class="portfolio-card-img" alt="Strategic Communications Projects" />
+            <span class="portfolio-card-overlay">
+              <span class="portfolio-card-caption">
+                <h4>Strategic Communications Projects</h4>
+                <p class="font-weight-normal">Data Analysis</p>
+              </span>
+            </span>
+          </a>
+        </div>
+
+        <div class="col-md-4 portfolio-item" data-category="data-analysis">
+          <a href="https://github.com/halagharaibeh21/Importance-of-scalling-data" target="_blank" class="portfolio-card">
+            <img src="https://img.freepik.com/free-vector/gradient-connection-background_52683-117386.jpg?semt=ais_hybrid&w=740" class="portfolio-card-img" alt="Importance Of Scaling" />
+            <span class="portfolio-card-overlay">
+              <span class="portfolio-card-caption">
+                <h4>Importance Of Scalling Data</h4>
+                <p class="font-weight-normal">Data Analysis</p>
+              </span>
+            </span>
+          </a>
+        </div>
+
+        <div class="col-md-4 portfolio-item" data-category="visualization">
+          <a href="https://github.com/halagharaibeh21/data-visualization-for-fifa-world-cup-2024-" target="_blank" class="portfolio-card">
+            <img src="https://img.freepik.com/free-vector/gradient-particle-wave-background_23-2150521668.jpg" class="portfolio-card-img" alt="FIFA Visualization" />
+            <span class="portfolio-card-overlay">
+              <span class="portfolio-card-caption">
+                <h4>Tableu FIFA Visualization Project</h4>
+                <p class="font-weight-normal">Category: Visualization</p>
+              </span>
+            </span>
+          </a>
+        </div>
+
+        <div class="col-md-4 portfolio-item" data-category="visualization">
+          <a href="https://github.com/halagharaibeh21/Call-Center-Performance-Dashboard" target="_blank" class="portfolio-card">
+            <img src="https://static.vecteezy.com/system/resources/previews/036/010/913/non_2x/digital-technology-futuristic-ai-big-data-blue-purple-background-internet-network-connection-abstract-cyber-information-communication-science-innovation-future-tech-line-dot-illustration-3d-free-vector.jpg" class="portfolio-card-img" alt="Call Center Dashboard" />
+            <span class="portfolio-card-overlay">
+              <span class="portfolio-card-caption">
+                <h4>Power BI Call Center Dashboard</h4>
+                <p class="font-weight-normal">Category: Visualization</p>
+              </span>
+            </span>
+          </a>
+        </div>
+
+        <div class="col-md-4 portfolio-item" data-category="visualization">
+          <a href="https://github.com/halagharaibeh21/Power-BI-Nike-Shoes-Dashboard" target="_blank" class="portfolio-card">
+            <img src="https://img.freepik.com/free-photo/3d-render-modern-background-with-flowing-cyber-dots-design_1048-14068.jpg?semt=ais_hybrid&w=740" class="portfolio-card-img" alt="Nike Dashboard" />
+            <span class="portfolio-card-overlay">
+              <span class="portfolio-card-caption">
+                <h4>Power BI Nike Shoes Dashboard</h4>
+                <p class="font-weight-normal">Category: Visualization</p>
+              </span>
+            </span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <div class="container text-center">
+      <p class="section-subtitle">How can you communicate?</p>
+      <h6 class="section-title mb-5">Contact Me</h6>
+      <div class="contact-info">
+        <img src="https://cdn-icons-png.freepik.com/256/15636/15636328.png?semt=ais_hybrid" alt="Hala's Image" />
+        <div class="details">
+          <h2>Hala Gharaibeh</h2>
+          <p><strong>Phone:</strong> 078 865 9191</p>
+          <p><strong>Email:</strong> halagharaibeh21@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const filterButtons = document.querySelectorAll(".filter-btn");
+      const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+      filterButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+          const filter = this.getAttribute("data-filter");
+          filterButtons.forEach((btn) => btn.classList.remove("active"));
+          this.classList.add("active");
+          portfolioItems.forEach((item) => {
+            const category = item.getAttribute("data-category");
+            item.style.display = filter === "all" || category === filter ? "block" : "none";
+          });
+        });
+      });
+
+      document.getElementById("visit-works-button").addEventListener("click", function () {
+        document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
